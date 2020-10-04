@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C3C36728"
+    android:background="#C3F4B082"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,11 +13,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Дистанция"
-        android:textColor="#273663"
+        android:textColor="@android:color/white"
         android:textSize="60sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 
@@ -25,9 +24,12 @@
         android:id="@+id/bClear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@android:color/white"
         android:onClick="clear"
-        android:text="Очистка"
+        android:text="Clear"
         android:textColor="#F80808"
+        android:textSize="18sp"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDistance" />
@@ -38,7 +40,7 @@
         android:layout_height="wrap_content"
         android:text="ПРОБЕГ"
         android:textColor="#353131"
-        android:textSize="60sp"
+        android:textSize="50sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,8 +60,8 @@
 
         <ImageView
             android:id="@+id/strelka"
-            android:layout_width="152dp"
-            android:layout_height="148dp"
+            android:layout_width="76dp"
+            android:layout_height="195dp"
             android:layout_gravity="center"
             android:background="#00FFFFFF"
             android:rotation="-134"
@@ -72,8 +74,11 @@
             android:layout_gravity="bottom|center_horizontal"
             android:text="Скорость"
             android:textColor="#EA2424"
-            android:textSize="24sp"
+            android:textSize="30sp"
             android:textStyle="bold" />
+
     </FrameLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
